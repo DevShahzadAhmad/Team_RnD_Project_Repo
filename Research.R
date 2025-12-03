@@ -25,12 +25,36 @@ hist(df$Cholesterol,
      col = "orange",
      border = "white")
 
+hist(df$Cholesterol,
+     breaks = 20,
+     prob = TRUE,
+     main = "Histogram of Cholesterol with Density Curve",
+     xlab = "Cholesterol",
+     col = "lightblue",
+     border = "white")
+
+lines(density(df$Cholesterol, na.rm = TRUE),
+      col = "red",
+      lwd = 2)
+
 # Max HR
 hist(df$Max.HR,
      main = "Histogram of Max HR",
      xlab = "Max HR",
      col = "orange",
      border = "white")
+
+hist(df$Max.HR,
+     breaks = 20,
+     prob = TRUE,
+     main = "Histogram of Max HR with Density Curve",
+     xlab = "Max HR",
+     col = "lightblue",
+     border = "white")
+
+lines(density(df$Max.HR),
+      col = "red",
+      lwd = 2)
 
 # ST depression
 hist(df$ST.depression,
@@ -44,3 +68,18 @@ head(df, 5)
 
 #Total no. of rows
 nrow(df)
+
+#Setting Heart Disease as a factor
+df$Heart.Disease <- as.factor(df$Heart.Disease)
+
+#Mean of Max HR against Heart Disease
+tapply(df$Max.HR, df$Heart.Disease, mean, na.rm = TRUE)
+
+#Mean of Cholesterol against Heart Disease
+tapply(df$Cholesterol, df$Heart.Disease, mean, na.rm = TRUE)
+
+#t-tests
+
+t.test(Max.HR ~ Heart.Disease, data = df)
+
+t.test(Cholesterol ~ Heart.Disease, data = df)
