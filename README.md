@@ -20,7 +20,7 @@ To address this, we conducted exploratory data analysis (EDA), generated visuali
 
 ## 👥 Group Members in group A 3
 
-| Name | Student ID |
+| Student Name | Student ID |
 |------|------------|
 | *Osibemekun Temitoyosi Folafoluwa* | *24100632* |
 | *Saumya Jayaraman* | *23072454* |
@@ -31,4 +31,70 @@ To address this, we conducted exploratory data analysis (EDA), generated visuali
 ---
 
 ## 📂 Repository Structure
+```
+project-root/
+│
+├── .gitignore
+│
+├── data/
+│   ├── Heart_Disease_Prediction.csv # Dataset used in the analysis
+│  
+├── R/
+│   ├── Research.R # Full R code for data cleaning, analysis & visualisations
+│   ├── analysis.R # Full R code for data cleaning, analysis & visualisations
+│   ├── figures/ # Exported images from R (boxplots, histograms)
+│ 
+├── report/
+│   ├── Final_Report_MaxHR.docx # Main written report
+│   ├── Appendices/ # R code appendix, tables, outputs
+│   ├── template.docx # University-provided report template 
+│   ├── presentation.pptx # University-provided research question presentation template 
+│
+│
+├── README.md
+└── Team_RnD_Project_Repo.Rproj
+```
+
+
+---
+
+## 🧪 Methods Summary
+
+We conducted the following steps:
+
+1. **Data cleaning & preprocessing**  
+   - Checked variable names  
+   - Converted categorical variables to factors  
+   - Verified completeness of MaxHR  
+   - Examined distribution of MaxHR  
+
+2. **Visualisation**  
+   - Boxplot comparing MaxHR across heart disease groups  
+   - Histogram of MaxHR with overlaid normal curve  
+   - Contingency table for demographic context  
+
+3. **Statistical Analysis**  
+   - Descriptive statistics (mean, median, SD, min/max)  
+   - Welch’s independent-samples t-test (two-sided)  
+   - Calculated effect size (Cohen’s d)
+
+4. **Interpretation**  
+   - Evaluated statistical significance (p-value < .05)  
+   - Reported effect magnitude  
+   - Discussed clinical relevance  
+
+---
+
+## ▶️ Running the R Code
+
+### **Requirements**
+Install the following packages in R:
+
+```r
+install.packages(c("tidyverse", "effsize"))
+```
+
+## Acknowledgements
+- Dataset:
+  - [Heart Disease Prediction](https://www.kaggle.com/datasets/rishidamarla/heart-disease-prediction/data)
 
