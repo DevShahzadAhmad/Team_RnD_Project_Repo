@@ -63,25 +63,16 @@ project-root/
 We conducted the following steps:
 
 1. **Data cleaning & preprocessing**  
-   - Checked variable names  
-   - Converted categorical variables to factors  
-   - Verified completeness of MaxHR  
-   - Examined distribution of MaxHR  
+ 
 
 2. **Visualisation**  
-   - Boxplot comparing MaxHR across heart disease groups  
-   - Histogram of MaxHR with overlaid normal curve  
-   - Contingency table for demographic context  
+ 
 
 3. **Statistical Analysis**  
-   - Descriptive statistics (mean, median, SD, min/max)  
-   - Welch’s independent-samples t-test (two-sided)  
-   - Calculated effect size (Cohen’s d)
+
 
 4. **Interpretation**  
-   - Evaluated statistical significance (p-value < .05)  
-   - Reported effect magnitude  
-   - Discussed clinical relevance  
+ 
 
 ---
 
