@@ -23,10 +23,10 @@ To address this, we conducted exploratory data analysis (EDA), generated visuali
 | Name | Student ID |
 |------|------------|
 | *Osibemekun Temitoyosi Folafoluwa* | *24100632* |
-| *Saumya Jayaraman* | *[ID]* |
-| *Shahzad Ahmad* | *[ID]* |
-| *Fairooz Rashed* | *[ID]* |
-| *Zoraize Saeed* | *[ID]* |
+| *Saumya Jayaraman* | *23072454* |
+| *Shahzad Ahmad* | *23008330* |
+| *Fairooz Rashed* | *24165566* |
+| *Zoraize Saeed* | *24172729* |
 
 ---
 
