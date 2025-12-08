@@ -16,8 +16,16 @@ summary(df)
 # Count missing values in each column
 colSums(is.na(df))
 
+# Convert Heart Disease to factor for clarity
+df <- df %>%
+  mutate(
+    HeartDisease = factor(Heart.Disease,
+                          levels = c("Absence", "Presence")),
+    Sex = factor(Sex, labels = c("Female", "Male"))
+  )
+
 # Compare summary statistics of MaxHR by heart disease group
-heart %>%
+df %>%
   group_by(HeartDisease) %>%
   summarise(
     n = n(),
