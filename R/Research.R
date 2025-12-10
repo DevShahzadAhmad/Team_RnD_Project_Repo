@@ -1,46 +1,51 @@
-#Saumya
+# Saumya
+# Heart Disease Dataset - Exploratory Data Analysis
 
+# Load the dataset
 df <- read.csv("Heart_Disease_Prediction.csv")
 
-# All Histograms
+# Quick data check
+cat("Dataset loaded successfully!\n")
+cat("Total number of rows:", nrow(df), "\n")
+cat("Total number of columns:", ncol(df), "\n\n")
+
+# Display first 5 rows
+cat("First 5 rows of the dataset:\n")
+head(df, 5)
+
+# === Histograms for Continuous Variables ===
 
 # Age
 hist(df$Age,
      main = "Histogram of Age",
-     xlab = "Age",
+     xlab = "Age (years)",
      col = "orange",
      border = "white")
 
-# BP
+# Blood Pressure
 hist(df$BP,
-     main = "Histogram of BP",
-     xlab = "BP",
+     main = "Histogram of Blood Pressure",
+     xlab = "BP (mm Hg)",
      col = "orange",
      border = "white")
 
 # Cholesterol
 hist(df$Cholesterol,
      main = "Histogram of Cholesterol",
-     xlab = "Cholesterol",
+     xlab = "Cholesterol (mg/dl)",
      col = "orange",
      border = "white")
 
-# Max HR
+# Maximum Heart Rate
 hist(df$Max.HR,
-     main = "Histogram of Max HR",
-     xlab = "Max HR",
+     main = "Histogram of Maximum Heart Rate",
+     xlab = "Max HR (bpm)",
      col = "orange",
      border = "white")
 
-# ST depression
+# ST Depression
 hist(df$ST.depression,
      main = "Histogram of ST Depression",
-     xlab = "ST Depression",
+     xlab = "ST Depression (mm)",
      col = "orange",
      border = "white")
-
-# First 5 rows
-head(df, 5)
-
-#Total no. of rows
-nrow(df)
