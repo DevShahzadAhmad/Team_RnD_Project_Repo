@@ -49,3 +49,17 @@ hist(df$ST.depression,
      xlab = "ST Depression (mm)",
      col = "orange",
      border = "white")
+
+
+#Fairooz
+df <- read.csv("Heart_Disease_Prediction.csv")
+colnames(df)
+head(df, 10)
+df$'Max HR'
+mean(df$'Max HR')
+summary(df$'Max HR')
+summary(df$'Heart Disease')
+sum(df$'Heart Disease' == "Presence")
+sum(df$'Heart Disease' == "Absence")
+by(df$'Max HR', df$'Heart Disease', mean)
+t.test(`Max HR` ~ `Heart Disease`, data = df)
