@@ -49,3 +49,22 @@ hist(df$ST.depression,
      xlab = "ST Depression (mm)",
      col = "orange",
      border = "white")
+
+
+# Shahzad
+
+## Code for the research on the presentation ##
+library(tidyverse)
+heart <- read.csv("Heart_Disease_Prediction.csv")
+head(heart)
+
+# Encode dependent variable: Absence = 0, Presence = 1
+heart$HeartDisease_num <- ifelse(heart$Heart.Disease == "Presence", 1, 0)
+
+numeric_vars <- heart %>%
+  select(Age, BP, Cholesterol, Max.HR, ST.depression, HeartDisease_num)
+cor_matrix <- cor(numeric_vars, use = "complete.obs")
+
+print(cor_matrix)
+
+## Code for the Report Evaluation ##
