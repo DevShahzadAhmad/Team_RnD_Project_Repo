@@ -35,3 +35,21 @@ df %>%
     min_MaxHR = min(Max.HR),
     max_MaxHR = max(Max.HR)
   )
+
+#A histogram of maximum heart rate with an overlaid kernel density curve.
+mu <- mean(df$Max.HR)
+sigma <- sd(df$Max.HR)
+
+ggplot(df, aes(x = Max.HR)) +
+  geom_histogram(bins = 20,
+                 fill = "grey80",
+                 colour = "black",
+                 aes(y = after_stat(density))) +
+  stat_function(fun = dnorm,
+                args = list(mean = mu, sd = sigma),
+                colour = "blue",
+                linewidth = 1) +
+  labs(title = "Distribution of Maximum Heart Rate",
+       x = "Maximum Heart Rate (bpm)",
+       y = "Density") +
+  theme_classic()
