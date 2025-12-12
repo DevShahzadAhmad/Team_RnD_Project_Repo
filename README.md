@@ -20,13 +20,13 @@ To address this, we conducted exploratory data analysis (EDA), generated visuali
 
 ## 👥 Group Members in group A 3
 
-| Student Name | Student ID |
-|------|------------|
-| *Osibemekun Temitoyosi Folafoluwa* | *24100632* |
-| *Saumya Jayaraman* | *23072454* |
-| *Shahzad Ahmad* | *23008330* |
-| *Fairooz Rashed* | *24165566* |
-| *Zoraize Saeed* | *24172729* |
+| Student Name                         | Student ID | GitHub Account(s) |
+|--------------------------------------|------------|-----------------|
+| *Osibemekun Temitoyosi Folafoluwa*  | *24100632* | [@to24abj](https://github.com/to24abj), [@yosiosibs](https://github.com/yosiosibs) |
+| *Saumya Jayaraman*                  | *23072454* | [@Saumya-Jay](https://github.com/Saumya-Jay) |
+| *Shahzad Ahmad*                     | *23008330* | [@DevShahzadAhmad](https://github.com/DevShahzadAhmad) |
+| *Fairooz Rashed*                    | *24165566* | [@fairoozsafa](https://github.com/fairoozsafa) |
+| *Zoraize Saeed*                     | *24172729* | [@zoraizesaeed](https://github.com/zoraizesaeed) |
 
 ---
 
@@ -82,7 +82,7 @@ We conducted the following steps:
 Install the following packages in R:
 
 ```r
-install.packages(c("tidyverse", "effsize"))
+install.packages("tidyverse")
 ```
 
 ## Acknowledgements
