@@ -24,7 +24,7 @@ To address this, we conducted exploratory data analysis (EDA), generated visuali
 |--------------------------------------|------------|-----------------|
 | *Osibemekun Temitoyosi Folafoluwa*  | *24100632* | [@to24abj](https://github.com/to24abj), [@yosiosibs](https://github.com/yosiosibs) |
 | *Saumya Jayaraman*                  | *23072454* | [@Saumya-Jay](https://github.com/Saumya-Jay) |
-| *Shahzad Ahmad*                     | *23008330* | [@DevShahzadAhmad](https://github.com/DevShahzadAhmad) |
+| *Shahzad Ahmad*                     | *23008330* | [@DevShahzadAhmad](https://github.com/DevShahzadAhmad), [@MachineLearningByShahzad](https://github.com/MachineLearningByShahzad) |
 | *Fairooz Rashed*                    | *24165566* | [@fairoozsafa](https://github.com/fairoozsafa) |
 | *Zoraize Saeed*                     | *24172729* | [@zoraizesaeed](https://github.com/zoraizesaeed) |
 
@@ -45,10 +45,8 @@ project-root/
 │   ├── figures/ # Exported images from R (boxplots, histograms)
 │ 
 ├── report/
-│   ├── Final_Report_MaxHR.docx # Main written report
-│   ├── Appendices/ # R code appendix, tables, outputs
-│   ├── template.docx # University-provided report template 
-│   ├── presentation.pptx # University-provided research question presentation template 
+│   ├── 7COM1079_Final Report_A3_.docx # Main written report
+│   ├── 7COM1079_Final report_template.docx # University-provided report template 
 │
 │
 ├── README.md
