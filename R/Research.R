@@ -63,3 +63,5 @@ sum(df$'Heart Disease' == "Presence")
 sum(df$'Heart Disease' == "Absence")
 by(df$'Max HR', df$'Heart Disease', mean)
 t.test(`Max HR` ~ `Heart Disease`, data = df)
+
+
